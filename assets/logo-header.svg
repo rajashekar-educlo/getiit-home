@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 96" role="img" aria-labelledby="getiitHeaderLogoTitle">
+  <title id="getiitHeaderLogoTitle">GETIIT</title>
+  <defs>
+    <linearGradient id="headerFlameCyan" x1="18" y1="8" x2="92" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7FE0FF"/>
+      <stop offset="0.42" stop-color="#35C4F0"/>
+      <stop offset="1" stop-color="#25D5DC"/>
+    </linearGradient>
+    <linearGradient id="headerFlameBlue" x1="48" y1="8" x2="80" y2="82" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38DDEB"/>
+      <stop offset="0.52" stop-color="#1478DE"/>
+      <stop offset="1" stop-color="#10248F"/>
+    </linearGradient>
+    <radialGradient id="headerFlameCore" cx="62" cy="50" r="35" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10248F" stop-opacity="0.95"/>
+      <stop offset="0.58" stop-color="#1478DE" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#35C4F0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <g transform="translate(10 3)">
+    <path fill="url(#headerFlameCyan)"
+      d="M49 3C39 22 25 37 22 61c-2 19 8 34 27 43 19-9 29-24 27-43C73 37 59 22 49 3Z"/>
+    <path fill="url(#headerFlameBlue)"
+      d="M49 4c5 25 25 42 31 63 4 14 0 27-31 40 5-16 8-29 2-43C44 48 38 30 49 4Z"/>
+    <path fill="url(#headerFlameCyan)" fill-opacity=".78"
+      d="M23 52C9 69 6 83 14 98c7 14 20 25 35 31-8-18-8-33 1-52-8-12-16-21-27-25Z"
+      transform="translate(0 -25)"/>
+    <ellipse cx="59" cy="55" rx="24" ry="29" fill="url(#headerFlameCore)"/>
+    <path fill="#fff"
+      d="M49 63c8 16 11 29 7 42-2 8-5 14-7 20-2-6-5-12-7-20-4-13-1-26 7-42Z"
+      transform="translate(0 -25)"/>
+    <path fill="#fff" fill-opacity=".72"
+      d="M58 9c10 18 17 37 17 58C67 48 60 30 58 9Z"/>
+  </g>
+
+  <g aria-hidden="true">
+    <text x="100" y="66"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="54"
+      font-weight="700"
+      letter-spacing="-2">
+      <tspan fill="#1F45D8">GET</tspan><tspan fill="#35C4F0">IIT</tspan>
+    </text>
+    <text x="290" y="45"
+      font-family="Georgia, 'Times New Roman', serif"
+      font-size="18"
+      font-weight="700"
+      fill="#0E1526">R</text>
+    <circle cx="296" cy="39" r="12" fill="none" stroke="#0E1526" stroke-width="2"/>
+  </g>
+</svg>

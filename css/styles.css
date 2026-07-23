@@ -120,7 +120,8 @@ p { color: var(--ink-700); }
 }
 .header-inner { display: flex; align-items: center; gap: var(--s-5); height: 68px; }
 
-.brand { display: inline-flex; align-items: center; gap: var(--s-3); font-weight: var(--fw-extra); }
+.brand { display: inline-flex; align-items: center; gap: var(--s-3); font-weight: var(--fw-extra); flex-shrink: 0; }
+.brand__logo { height: 54px; width: auto; }
 .brand__mark { height: 45px; width: auto; }
 .brand__name { font-size: var(--fs-lg); letter-spacing: -0.02em; color: var(--ink-900); }
 .brand__name-accent { color: var(--color-primary); }
@@ -604,8 +605,9 @@ p { color: var(--ink-700); }
   .section { padding-block: var(--section-y-sm); }
   .section--spacious { padding-block: var(--section-y); }
   .section-head { margin-bottom: var(--s-5); }
-  .header-inner { gap: var(--s-3); }
+  .header-inner { width: 100%; max-width: none; gap: var(--s-3); }
   .brand { min-width: 0; }
+  .brand__logo { height: 48px; max-width: min(52vw, 160px); }
   .brand__name { white-space: nowrap; }
   .header-actions { margin-left: auto; gap: var(--s-2); flex-shrink: 0; }
   .nav, .header-actions .btn { display: none; }

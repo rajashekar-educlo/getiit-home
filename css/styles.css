@@ -633,6 +633,7 @@ p { color: var(--ink-700); }
   .industry-market { padding: var(--s-5); }
   .industry-market__intro, .industry-detail-grid, .customer-grid { grid-template-columns: 1fr; }
   .customer-network { padding: var(--s-5); }
+  #edtech-network.reveal { opacity: 1; transform: none; }
   .capability-grid { grid-template-columns: 1fr; }
 }
 

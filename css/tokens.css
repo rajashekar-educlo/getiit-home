@@ -1,0 +1,154 @@
+/* ==========================================================================
+   GETIIT — Design Tokens
+   Shared design system for both site variants ("Enabling Transformation").
+   Palette is derived from the flame logo: cyan -> azure -> deep royal blue.
+   Change a value here and it updates everywhere.
+   ========================================================================== */
+
+:root {
+  /* --- Brand palette (from the flame mark) --- */
+  --brand-cyan-100: #EAF7FE;
+  --brand-cyan-300: #7FE0FF;
+  --brand-cyan-500: #35C4F0;
+  --brand-sky-500:  #17A6E8;
+  --brand-blue-500: #1478DE;
+  --brand-blue-600: #0E6FD6;
+  --brand-blue-700: #0B57B4;
+  --brand-royal-800:#122A9E;
+  --brand-royal-900:#10248F;
+
+  /* --- Semantic colors --- */
+  --color-primary:        var(--brand-blue-600);
+  --color-primary-strong: var(--brand-blue-700);
+  --color-accent:         var(--brand-cyan-500);
+  --color-link:           var(--brand-blue-700); /* text-on-light links/eyebrows (AA) */
+  --color-on-primary:     #FFFFFF;
+
+  /* --- Cool-gray ramp (tinted toward the brand blue) --- */
+  --gray-50:  #F6F8FC;
+  --gray-100: #EEF2F9;
+  --gray-200: #E2E8F1;
+  --gray-300: #CDD6E4;
+  --gray-400: #99A5BC;
+  --gray-500: #5C6883;  /* muted text — AA on white & off-white */
+  --gray-600: #48536E;
+  --gray-700: #313C58;  /* body */
+  --gray-800: #1B2540;
+  --gray-900: #0E1526;  /* ink / headings */
+
+  /* --- Neutrals / surfaces (light theme) --- */
+  --ink-900: var(--gray-900);
+  --ink-700: var(--gray-700);
+  --ink-500: var(--gray-500);
+  --line:    var(--gray-200);
+  --bg:         var(--gray-50);   /* page background */
+  --surface:    #FFFFFF;          /* cards lift above the page */
+  --surface-2:  var(--gray-100);  /* alt sections / subtle fills */
+  --surface-3:  #E7EEF8;          /* deeper fill */
+  --surface-inset: var(--gray-100);
+
+  /* --- Signature gradients --- */
+  --gradient-flame: linear-gradient(135deg, var(--brand-cyan-300) 0%, var(--brand-cyan-500) 35%, var(--brand-sky-500) 65%, var(--brand-blue-600) 100%);
+  --gradient-ink:   linear-gradient(135deg, #0B1533 0%, #122A6E 60%, #0E3E9E 100%);
+  --glow-flame:     radial-gradient(60% 60% at 50% 40%, rgba(53,196,240,0.18) 0%, rgba(20,120,222,0.07) 45%, rgba(20,120,222,0) 75%);
+
+  /* --- Typography --- */
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-serif: "Fraunces", Georgia, "Times New Roman", serif; /* editorial accent — pull-quotes only */
+
+  --fs-xs:   0.8125rem;  /* 13 */
+  --fs-sm:   0.9375rem;  /* 15 */
+  --fs-base: 1rem;       /* 16 */
+  --fs-md:   1.125rem;   /* 18 */
+  --fs-lg:   1.375rem;   /* 22 */
+  --fs-xl:   1.75rem;    /* 28 */
+  --fs-2xl:  2.25rem;    /* 36 */
+  --fs-3xl:  3rem;       /* 48 */
+  --fs-hero: clamp(2.15rem, 1.1rem + 4.6vw, 4rem);
+
+  --lh-tight: 1.1;    /* display headings */
+  --lh-snug:  1.3;
+  --lh-base:  1.65;
+
+  /* Letter-spacing: tighten large type, open up small caps */
+  --tracking-tighter: -0.03em; /* hero / largest display */
+  --tracking-tight:   -0.02em; /* headings */
+  --tracking-caps:     0.1em;  /* eyebrows / all-caps labels */
+  --measure: 65ch;             /* max line length for body copy */
+
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold:600;
+  --fw-heading: 600;  /* headings use medium weight, not black */
+  --fw-bold:    700;
+  --fw-extra:   800;
+
+  /* --- Spacing scale --- */
+  --s-1: 0.25rem;
+  --s-2: 0.5rem;
+  --s-3: 0.75rem;
+  --s-4: 1rem;
+  --s-5: 1.5rem;
+  --s-6: 2rem;
+  --s-7: 3rem;
+  --s-8: 4rem;
+  --s-9: 6rem;
+  --s-10: 8rem;
+  --section-y:    clamp(4.5rem, 3rem + 5vw, 7.5rem);   /* standard section padding */
+  --section-y-lg: clamp(6rem, 3.5rem + 8vw, 10.5rem);  /* major "breath" sections */
+  --section-y-sm: clamp(3rem, 2.2rem + 3vw, 4.5rem);   /* tightly related content */
+
+  /* --- Layout --- */
+  --container: 90%;
+  --container-narrow: 100%;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* --- Radius --- */
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 18px;
+  --r-xl: 24px;
+  --r-pill: 999px;
+
+  /* --- Shadows (layered + subtle, tinted toward ink/brand — no big glows) --- */
+  --shadow-sm: 0 1px 2px rgba(11,21,51,0.05), 0 1px 3px rgba(11,21,51,0.05);
+  --shadow-md: 0 2px 4px rgba(13,52,120,0.04), 0 8px 22px rgba(13,52,120,0.08);
+  --shadow-lg: 0 4px 10px rgba(13,52,120,0.05), 0 20px 48px rgba(13,52,120,0.10);
+  --ring: 0 0 0 3px rgba(20,120,222,0.35);
+
+  /* --- Motion --- */
+  --dur-fast: 140ms;
+  --dur: 200ms;
+  --dur-slow: 480ms;
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+/* --------------------------------------------------------------------------
+   Dark theme — a small inline script in index.html sets data-theme from the
+   stored choice or the OS preference before paint, so we only need ONE block
+   here (no duplicated @media query to keep in sync).
+   -------------------------------------------------------------------------- */
+:root[data-theme="dark"] {
+  --color-primary:        #4C9BF2;
+  --color-primary-strong: #6FB0F6;
+  --color-accent:         var(--brand-cyan-500);
+  --color-link:           #7CB8F7;
+
+  --ink-900: #EAF0FB;
+  --ink-700: #C2CCE1;
+  --ink-500: #93A0BE;
+  --line:    #253150;
+
+  --bg:         #080E1F;   /* page */
+  --surface:    #0F1830;   /* cards lift above the page */
+  --surface-2:  #111C36;   /* alt sections */
+  --surface-3:  #172443;
+  --surface-inset: #0E1830;
+
+  --gradient-ink: linear-gradient(135deg, #0A1226 0%, #0F2050 60%, #123A8C 100%);
+  --glow-flame:   radial-gradient(60% 60% at 50% 40%, rgba(53,196,240,0.20) 0%, rgba(20,120,222,0.08) 45%, rgba(20,120,222,0) 75%);
+
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+  --shadow-md: 0 6px 20px rgba(0,0,0,0.45);
+  --shadow-lg: 0 20px 50px rgba(0,0,0,0.55);
+}

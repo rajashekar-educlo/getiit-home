@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GETIIT — Enabling transformation through technology</title>
+  <meta name="description" content="GETIIT is an IT consultancy specialising in the education sector — business applications, analytics, cloud and mobile solutions that work together." />
+
+  <!-- Social / Open Graph (uses the on-white lockup) -->
+  <meta property="og:title" content="GETIIT — Enabling transformation through technology" />
+  <meta property="og:description" content="IT consulting for education and enterprise. Business applications, analytics, cloud and mobile — delivered your way." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-social.png" />
+
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem('getiit-theme');
+        if (!t) t = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) { document.documentElement.setAttribute('data-theme', 'light'); }
+    })();
+  </script>
+  <link rel="icon" type="image/svg+xml" href="assets/flame-mark.svg" />
+  <link rel="preload" href="assets/fonts/PlusJakartaSans-var.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= Header ================= -->
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="GETIIT home">
+        <img class="brand__mark" src="assets/flame-mark.svg" alt="" width="90" height="45" />
+        <span class="brand__name">GET<span class="brand__name-accent">IIT</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#what">What we do</a>
+        <a href="#who">Who we serve</a>
+        <a href="#how">How we work</a>
+        <a href="#why">Why GETIIT</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode" title="Toggle theme">
+          <span class="theme-toggle__icon" aria-hidden="true"></span>
+        </button>
+        <a class="btn btn--primary btn--sm" href="#contact">Talk to us</a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= Hero ================= -->
+    <section class="hero">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__copy">
+          <p class="eyebrow">IT consulting for education &amp; enterprise</p>
+          <h1 class="hero__title">Enabling transformation — from the classroom to the enterprise.</h1>
+          <p class="hero__lead">
+            GETIIT helps universities, colleges and growing organisations replace
+            disconnected systems with business applications, analytics, cloud and
+            mobile solutions that actually work together.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Talk to us</a>
+            <a class="btn btn--ghost" href="#what">See what we do</a>
+          </div>
+          <ul class="hero__support">
+            <li>Vendor-neutral advice</li>
+            <li>Collaborative delivery</li>
+            <li>ISO&nbsp;9001 quality</li>
+          </ul>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__flame-ring">
+            <img src="assets/logo-icon.png" alt="" class="hero__flame" width="230" height="440" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Trust strip ================= -->
+    <section class="trust" aria-label="At a glance">
+      <div class="container trust__grid">
+        <div class="trust__item"><strong>Since 2007</strong><span>Working in IT services</span></div>
+        <div class="trust__item"><strong>Education-first</strong><span>Sector specialists</span></div>
+        <div class="trust__item"><strong>Onshore–offshore</strong><span>Flexible delivery</span></div>
+        <div class="trust__item"><strong>ISO 9001</strong><span>Quality practices</span></div>
+      </div>
+    </section>
+
+    <!-- ================= Clients ================= -->
+    <section class="section section--alt" id="clients">
+      <div class="container">
+        <header class="section-head reveal">
+          <!-- <p class="eyebrow">Who we serve</p> -->
+          <h2>Trusted by organisations across education and enterprise.</h2>
+        </header>
+      </div>
+      <div class="clients-carousel reveal" role="region" aria-label="Client logos">
+        <div class="clients-track">
+          <ul class="clients-track__group">
+            <li class="client-logo"><img src="assets/images/clients/geometric.jpg" alt="Geometric" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/continental.jpg" alt="Continental" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/jpmorgan-chase.jpg" alt="JPMorgan Chase" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/3d-plm-software.jpg" alt="3D PLM Software" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/dassault-systemes.jpg" alt="Dassault Syst&egrave;mes" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/dell-perotsystems.jpg" alt="Dell PerotSystems" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/montreal-college.jpg" alt="Montreal College" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/acbi.png" alt="ACBI &ndash; Australian College of Business Intelligence" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/redhill-education.png" alt="Redhill Education" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/nexted-group.png" alt="NextEd Group" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/australian-learning-group.png" alt="Australian Learning Group" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/nortwest.png" alt="Nortwest" loading="lazy" width="160" height="90"></li>
+          </ul>
+          <ul class="clients-track__group" aria-hidden="true">
+            <li class="client-logo"><img src="assets/images/clients/geometric.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/continental.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/jpmorgan-chase.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/3d-plm-software.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/dassault-systemes.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/dell-perotsystems.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/montreal-college.jpg" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/acbi.png" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/redhill-education.png" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/nexted-group.png" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/australian-learning-group.png" alt="" loading="lazy" width="160" height="90"></li>
+            <li class="client-logo"><img src="assets/images/clients/nortwest.png" alt="" loading="lazy" width="160" height="90"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= About GETIIT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section-head section-head--stacked reveal">
+          <p class="eyebrow">About GETIIT</p>
+          <h2>A people-first IT consultancy serving global education and enterprise.</h2>
+          <p class="section-head__lead section-head__lead--stacked">
+            Founded in 2007, we've been delivering transformation through technology across Australia, Asia Pacific, and beyond. Our strength lies in our team.
+          </p>
+        </header>
+
+        <div class="about-content reveal">
+          <div class="about-text">
+            <p class="eyebrow">Who we are</p>
+            <p><em>"Global Electronic Transformation with Innovative IT Services Company"</em></p>
+            <p>GETIIT was founded in 2007, and has since been providing significant information technology and virtual learning services to our clients.</p>
+            <p>GETIIT is headquartered in Sydney and operates across locations globally. We are, above all, a people company. Our operations are spread across Australia and the Asia Pacific region. Management and support roles aside, our employees are grouped into IT Consulting, Virtual Learning and Co-Sourcing, each governed by its own specific economic rules and managed with its own profit.</p>
+          </div>
+          <div class="about-image">
+            <img src="assets/images/generated/about-team-collaboration.png"
+                 alt="GETIIT consultants collaborating around a shared screen in a modern office"
+                 width="1774" height="887" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Core values -->
+        <div class="values-grid">
+          <article class="value-card reveal">
+            <h3>Collaboration at heart</h3>
+            <p>We listen before we propose, understand before we design. Working together isn't a slogan—it's how we operate with every client, partner, and team member.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3>Quality & excellence</h3>
+            <p>ISO 9001 standards, best practices, continuous improvement. We implement high-quality control on all work, with objective methods to identify and resolve issues.</p>
+          </article>
+          <article class="value-card reveal">
+            <h3>People first</h3>
+            <p>We invest in our team because they're our competitive advantage. Competitive compensation, continuous training, and profit-sharing arrangements ensure we retain the best talent.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= What we do ================= -->
+    <section class="section" id="what">
+      <div class="container">
+        <header class="section-head section-head--stacked reveal">
+          <p class="eyebrow">What we do</p>
+          <h2>Technology that connects how you teach and how you run.</h2>
+          <p class="section-head__lead section-head__lead--stacked">
+            We start with education, then bring the same four capabilities to any
+            organisation ready to modernise.
+          </p>
+        </header>
+
+        <!-- Working Together -->
+        <div class="values-narrative reveal">
+          <p class="eyebrow">Our values: working together</p>
+          <h3>"Collaboration is at the heart of every interaction with our clients"</h3>
+          <div class="values-narrative__grid">
+            <p>GETIIT consultants listen carefully to understand your situation before suggesting a solution. We work with you to develop a clear path to realistic project goals. By sharing knowledge effectively, we make life simpler.</p>
+            <p>Unique challenges deserve unique solutions. Our way of working with our clients, called Customer Business Experience, brings you greater flexibility, reactivity and creativity — qualities that elevate your performance.</p>
+            <p>A study begins with a discussion of the questions to be addressed and prioritisation. We lend our expertise to design and blueprint, to optimally address questions and maximise time and cost efficiency.</p>
+            <p>Our professional expertise and extensive market knowledge provide a strong foundation to guide you through transformation. GETIIT is with you every step of the way, giving you the flexibility to focus your energies where they are most effective.</p>
+            <p>We work closely with our education sector customers to develop study documentation and statistical analysis plans, so the delivered results can be integrated into sponsor documentation and statistical analysis.</p>
+            <p>GETIIT implements high quality control on all data, incorporating objective methods to identify issues. Sites are monitored on an ongoing basis, with sponsor visibility to queries and resolution of issues.</p>
+            <p>Our processing and analysis steps incorporate years of advances in optimising education ERP implementation and support, producing interpretable results for our sponsors.</p>
+            <p>Best practices in project management are followed, adhering to quality standards such as ISO 9001. Updates and interim reports are provided, alongside project plans, schedule plans and task masters. Presentation and publication support is provided according to the needs of our sponsors.</p>
+          </div>
+        </div>
+
+        <!-- Vision & Mission Callout -->
+        <div class="vision-mission reveal">
+          <div class="vision-box">
+            <p class="eyebrow">Our Vision</p>
+            <h3>Enabling Freedom</h3>
+            <p>"GETIIT will lead the way by providing clients with insights and capabilities that boost their freedom to achieve superior results."</p>
+            <p>Our clients are operating in a complex environment, often under huge constraints and pressures which limit their freedom. We believe in sharing our own freedom — independence from software editors and hardware manufacturers, entrepreneurial spirit, values and creativity — with our clients.</p>
+            <p>What also sets us apart is the way we work together — with each other, with our partners and with our clients. It's at the heart of our every interaction and is how we forge closer, more effective relationships.</p>
+          </div>
+          <div class="mission-box">
+            <p class="eyebrow">Our Mission</p>
+            <h3>Enabling Transformation</h3>
+            <p>"GETIIT enables its clients to transform and perform through technologies."</p>
+            <p>Transformation — high impact change to fundamentally alter market position — is essential to meet the challenges of today's complex, rapidly evolving global economy.</p>
+            <p>Our mission is to empower our clients to respond faster and more intuitively to changing market dynamics. We enable them to become more agile and competitive through leveraging new technologies. The seamless collaboration of our consultants, IT specialists and outsourcing experts forms the backbone of our unique approach, creating truly integrated services.</p>
+          </div>
+        </div>
+
+        <!-- Featured education card -->
+        <div class="section-media section-media--right reveal">
+          <img src="assets/images/generated/education-platform-review.png"
+               alt="Consultants and education leaders reviewing learning analytics on laptops and tablets"
+               width="1536" height="1024" loading="lazy">
+        </div>
+
+        <article class="feature-card reveal">
+          <div class="feature-card__body">
+            <p class="eyebrow eyebrow--on-dark">Our specialisation</p>
+            <h3>Education technology</h3>
+            <p>A connected platform for how institutions teach, enrol and operate —
+              built for higher, professional, vocational and technical education.</p>
+          </div>
+          <ul class="feature-card__list">
+            <li>E-learning &amp; live streaming</li>
+            <li>Digital library &amp; asset management</li>
+            <li>Assessment &amp; attendance management</li>
+            <li>Online qualifications</li>
+            <li>Real-time reporting &amp; dashboards</li>
+            <li>Campus network &amp; learning resources</li>
+          </ul>
+        </article>
+
+        <!-- Four pillars -->
+        <div class="pillar-grid">
+          <article class="pillar-card reveal">
+            <div class="pillar-card__icon" data-icon="apps" aria-hidden="true"></div>
+            <h3>Business Applications</h3>
+            <p>Run finance, people, supply chain and operations on connected systems
+              instead of silos.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-card__icon" data-icon="analytics" aria-hidden="true"></div>
+            <h3>Analytics</h3>
+            <p>Turn operational data into decisions with reporting, business
+              intelligence and performance dashboards.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-card__icon" data-icon="cloud" aria-hidden="true"></div>
+            <h3>Cloud</h3>
+            <p>Move applications and infrastructure to the cloud with SaaS, managed
+              platforms and virtualisation — no large upfront investment.</p>
+          </article>
+          <article class="pillar-card reveal">
+            <div class="pillar-card__icon" data-icon="mobile" aria-hidden="true"></div>
+            <h3>Mobile</h3>
+            <p>Put services in people's hands with mobile apps, managed mobility and
+              secure device management.</p>
+          </article>
+        </div>
+
+        <!-- Service offerings detail -->
+        <div class="service-offerings reveal">
+          <h3>Complete service offerings</h3>
+          <div class="offerings-grid">
+            <div class="offering-category">
+              <h4>EdTech Applications</h4>
+              <ul class="offering-list">
+                <li>Education management &amp; learning platforms</li>
+                <li>E-learning &amp; live streaming</li>
+                <li>Digital library &amp; asset management</li>
+                <li>Assessment &amp; attendance management</li>
+                <li>Online qualifications</li>
+                <li>Real-time dashboards &amp; reporting</li>
+              </ul>
+            </div>
+            <div class="offering-category">
+              <h4>Business Applications</h4>
+              <ul class="offering-list">
+                <li>Financial management &amp; accounting</li>
+                <li>Human capital management</li>
+                <li>Supply chain &amp; logistics</li>
+                <li>Customer relationship management</li>
+                <li>Governance, risk &amp; compliance</li>
+                <li>Enterprise performance management</li>
+              </ul>
+            </div>
+            <div class="offering-category">
+              <h4>Modern Infrastructure</h4>
+              <ul class="offering-list">
+                <li>Cloud migration &amp; SaaS solutions</li>
+                <li>Mobile applications &amp; management</li>
+                <li>Analytics &amp; business intelligence</li>
+                <li>Enterprise data management</li>
+                <li>Security &amp; compliance solutions</li>
+                <li>Infrastructure optimization</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Platform capabilities -->
+        <div class="capabilities reveal">
+          <h3>Platform capabilities, in depth</h3>
+          <p class="capabilities__lead">Beyond the core offerings above, our EDTECH platform spans deep functional capability across every operational domain. Explore each area below.</p>
+
+          <div class="capability-grid">
+            <details class="capability" open>
+              <summary>Human Capital Management</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>End-user service delivery</h4>
+                  <p>Manager and employee self-service portals covering budgeting, recruitment, compensation and travel expense tracking; employee-side tools for time management, benefits enrolment, corporate learning, internal opportunities and personal information management; an interaction centre for HR staff to manage contracts and case history.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Workforce analytics &amp; talent management</h4>
+                  <p>Workforce planning, cost simulation and benchmarking; recruitment, succession planning and enterprise learning management; performance and compensation management; strategic alignment through balanced scorecards.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Workforce process &amp; deployment</h4>
+                  <p>Employee administration, organisational management, global employee relocation, benefits, time and attendance, payroll and legal reporting across 49 countries; project resource planning, portfolio management and retail scheduling.</p>
+                </div>
+              </div>
+            </details>
+
+            <details class="capability" open>
+              <summary>Customer Relationship Management</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>Marketing &amp; loyalty</h4>
+                  <p>Campaign, segment, list and lead management; loyalty and rewards programs; e-marketing, personalisation and catalogue management; social media listening, sentiment analysis and real-time engagement.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Sales &amp; service</h4>
+                  <p>Sales automation, ERP integration and analytics dashboards; 360-degree customer profiles; field service, workforce scheduling and business communications management; mobile solutions for customer service.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Procurement &amp; product lifecycle</h4>
+                  <p>Cloud sourcing, contract, supplier and invoice management; commodity procurement; product development, portfolio management and compliance across the product lifecycle.</p>
+                </div>
+              </div>
+            </details>
+
+            <details class="capability" open>
+              <summary>Supply Chain &amp; Asset Management</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>Supply chain management</h4>
+                  <p>Integrated sales &amp; operations planning, demand and manufacturing planning, warehouse and transportation management, track &amp; trace, and supply chain analytics and sustainability.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Enterprise asset management</h4>
+                  <p>Asset portfolio and maintenance operations, asset visibility and information management, mobile asset management and operational risk management — shifting organisations from reactive maintenance toward whole-life planning and lifecycle costing.</p>
+                </div>
+              </div>
+            </details>
+
+            <details class="capability" open>
+              <summary>Analytics &amp; Business Intelligence</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>Applied analytics</h4>
+                  <p>Asset, CRM, spend and supply chain performance analytics; profitability and cost management; industry-specific analytics for banking, retail and utilities.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Business intelligence &amp; data warehousing</h4>
+                  <p>Predictive and visual intelligence, reporting and dashboards; enterprise data warehousing and high-performance in-memory analytics; GIS integration.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Enterprise information &amp; performance management</h4>
+                  <p>Data integration, migration, quality and master data management; strategy management, financial consolidation and closing; governance, risk and compliance including access control and fraud management.</p>
+                </div>
+              </div>
+            </details>
+
+            <details class="capability" open>
+              <summary>Cloud</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>Cloud-delivered solutions</h4>
+                  <p>Business intelligence, ERP, financials, HR and procurement — all available on demand. Customer-facing sales and service in the cloud, supplier collaboration networks, and a platform layer for app and database services, virtualisation and landscape management.</p>
+                </div>
+              </div>
+            </details>
+
+            <details class="capability" open>
+              <summary>Mobile</summary>
+              <div class="capability__body">
+                <div class="capability__group">
+                  <h4>Managed mobility &amp; apps</h4>
+                  <p>Cloud-based managed mobility without large upfront investment; line-of-business, industry and consumer mobile apps; custom mobile app development across major platforms.</p>
+                </div>
+                <div class="capability__group">
+                  <h4>Device management &amp; commerce</h4>
+                  <p>Enterprise mobility management, device security, content management and BYOD support; mobile banking and consumer payments; enterprise SMS/MMS and rich communication services.</p>
+                </div>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Who we serve ================= -->
+    <section class="section section--alt" id="who">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Who we serve</p>
+          <h2>Education first — and every sector that learns from it.</h2>
+        </header>
+
+        <div class="section-media section-media--wide reveal">
+          <img src="assets/images/generated/sector-strategy-session.png"
+               alt="Consultants and client stakeholders reviewing sector data in a strategy session"
+               width="1824" height="862" loading="lazy">
+        </div>
+
+        <div class="who-grid">
+          <div class="who-primary reveal">
+            <h3>Six education domains</h3>
+            <ul class="tag-list tag-list--primary">
+              <li>Higher Education</li>
+              <li>Professional Education</li>
+              <li>Vocational Education</li>
+              <li>Technical Education</li>
+              <li>Not-for-profits</li>
+              <li>Smart education in government</li>
+            </ul>
+          </div>
+          <div class="who-secondary reveal">
+            <h3>Beyond education</h3>
+            <ul class="tag-list">
+              <li>Automotive</li>
+              <li>Distribution</li>
+              <li>Energy, Utilities &amp; Chemicals</li>
+              <li>Financial Services</li>
+              <li>Health Care</li>
+              <li>Life Sciences</li>
+              <li>Manufacturing</li>
+              <li>Public Sector</li>
+              <li>Retail</li>
+              <li>Telecom, Media &amp; Entertainment</li>
+            </ul>
+            <p class="who-note">Automotive delivery experience includes work referenced with Continental and MRF.</p>
+          </div>
+        </div>
+
+        <div class="industry-market reveal" id="industries">
+          <div class="industry-market__intro">
+            <p class="eyebrow">Industries we work with</p>
+            <h3>Target-market expertise shaped around each sector's real operating challenges.</h3>
+            <p>
+              Every industry has different priorities. GETIIT combines industry experts,
+              business-process experience and proven delivery methods to help clients
+              modernise operations, improve performance and adopt technology with confidence.
+            </p>
+          </div>
+
+          <!-- <ul class="industry-chip-list" aria-label="Target industries">
+            <li>Automotive</li>
+            <li>Distribution</li>
+            <li>Energy, Utilities &amp; Chemicals</li>
+            <li>Financial Services</li>
+            <li>Health Care</li>
+            <li>Life Sciences</li>
+            <li>Manufacturing</li>
+            <li>Public Sector</li>
+            <li>Retail</li>
+            <li>Telecom, Media &amp; Entertainment</li>
+          </ul> -->
+
+          <div class="industry-detail-grid">
+            <details class="industry-detail" open>
+              <summary>Automotive</summary>
+              <div class="industry-detail__body">
+                <p>Business and technology solutions for improved growth, profitability and performance across vehicle manufacturers and suppliers.</p>
+                <ul>
+                  <li>Sales, marketing and supply-chain transformation</li>
+                  <li>Collaborative delivery for global automotive teams</li>
+                  <li>Experience referenced with Continental and MRF</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Distribution</summary>
+              <div class="industry-detail__body">
+                <p>Logistics and distribution support focused on speed, value and operational control.</p>
+                <ul>
+                  <li>Transport and warehouse management systems</li>
+                  <li>Warehouse billing engines</li>
+                  <li>Advanced planning and scheduling</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Energy, Utilities &amp; Chemicals</summary>
+              <div class="industry-detail__body">
+                <p>Industry-specific technology services for organisations operating through major regulatory, infrastructure and market change.</p>
+                <ul>
+                  <li>Utilities transformation services</li>
+                  <li>Smart metering and smart grids</li>
+                  <li>Oil, gas, chemicals and nuclear-energy solutions</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Educational Services</summary>
+              <div class="industry-detail__body">
+                <p>Deep education-domain experience across consulting, technology and outsourcing for institutions that need modern learning and operating platforms.</p>
+                <ul>
+                  <li>Higher, professional, vocational and technical education</li>
+                  <li>Not-for-profit and government smart-education initiatives</li>
+                  <li>Next-generation global delivery for education services</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Health Care</summary>
+              <div class="industry-detail__body">
+                <p>Technology transformation for cost-effective, patient-centric services across providers, payers and public health organisations.</p>
+                <ul>
+                  <li>Integrated patient and citizen care models</li>
+                  <li>Patient safety, privacy and health information technology</li>
+                  <li>Operational efficiency and cost-management improvements</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Life Sciences</summary>
+              <div class="industry-detail__body">
+                <p>Insight-led technology services across pharmaceuticals, biotechnology, medical devices and agribusiness.</p>
+                <ul>
+                  <li>Marketing, sales, supply chain and R&amp;D support</li>
+                  <li>Global regulatory compliance and outsourcing</li>
+                  <li>Round-the-clock global delivery capability</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Public Sector</summary>
+              <div class="industry-detail__body">
+                <p>End-to-end consulting, technology, outsourcing and professional services for public organisations modernising citizen services.</p>
+                <ul>
+                  <li>Tax, public security, cities and regional government</li>
+                  <li>Healthcare and citizen-service transformation</li>
+                  <li>Tailored frameworks for complex public-sector programmes</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Retail</summary>
+              <div class="industry-detail__body">
+                <p>Business and technology solutions that help retailers improve performance in complex, margin-sensitive environments.</p>
+                <ul>
+                  <li>Retail transformation methodology</li>
+                  <li>Cost-structure and operating-model improvement</li>
+                  <li>Rapid strategy-to-implementation support</li>
+                </ul>
+              </div>
+            </details>
+
+            <details class="industry-detail" open>
+              <summary>Telecom, Media &amp; Entertainment</summary>
+              <div class="industry-detail__body">
+                <p>End-to-end consulting, technology and outsourcing services for communications, media and entertainment organisations.</p>
+                <ul>
+                  <li>Wireline, wireless, ISP, cable, broadcast and publishing experience</li>
+                  <li>Back-office operations upgrade and launch strategy</li>
+                  <li>Innovation teams, labs and strategic technology alliances</li>
+                </ul>
+              </div>
+            </details>
+          </div>
+        </div>
+
+        <div class="customer-network reveal" id="edtech-network">
+          <div class="industry-market__intro industry-market__intro--stacked">
+            <p class="eyebrow">EDTECH prospective customers network</p>
+            <h3>Australia university customers and campus reach.</h3>
+            <p>
+              Australia is home to 42 universities, including public Australian,
+              private Australian and private international institutions. Many
+              universities operate across multiple campuses, creating a broad
+              national network for education technology, student services,
+              analytics and digital learning solutions.
+            </p>
+          </div>
+
+          <div class="customer-grid">
+            <details class="industry-detail customer-card" open>
+              <summary>Australian Catholic University</summary>
+              <div class="industry-detail__body">
+                <p><strong>ACT:</strong> Canberra</p>
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>QLD:</strong> Brisbane</p>
+                <p><strong>VIC:</strong> Melbourne, Ballarat</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Australian National University</summary>
+              <div class="industry-detail__body">
+                <p><strong>ACT:</strong> Canberra</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Avondale University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Lake Macquarie, Sydney</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Bond University</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Brisbane, Gold Coast</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Charles Darwin University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>NT:</strong> Alice Springs, Darwin, Katherine, Palmerston</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Charles Sturt University</summary>
+              <div class="industry-detail__body">
+                <p><strong>ACT:</strong> Canberra</p>
+                <p><strong>NSW:</strong> Albury, Bathurst, Dubbo, Goulburn, Orange, Port Macquarie, Sydney, Wagga Wagga</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>CQ University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>QLD:</strong> Brisbane, Bundaberg, Cairns, Emerald, Gladstone, Mackay, Rockhampton, Townsville</p>
+                <p><strong>SA:</strong> Adelaide</p>
+                <p><strong>VIC:</strong> Melbourne</p>
+                <p><strong>WA:</strong> Perth</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Curtin University</summary>
+              <div class="industry-detail__body">
+                <p><strong>WA:</strong> Kalgoorlie, Perth</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Deakin University</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Geelong, Melbourne, Warnambool, Werribee</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Edith Cowan University</summary>
+              <div class="industry-detail__body">
+                <p><strong>WA:</strong> Bunbury, Perth</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Federation University of Australia</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Ballarat, Churchill, Horsham</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Flinders University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NT:</strong> Alice Springs, Darwin, Katherine, Nhulunbuy, Tennant Creek</p>
+                <p><strong>SA:</strong> Adelaide</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Griffith University</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Brisbane, Gold Coast</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>James Cook University</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Brisbane, Cairns, Mackay, Mount Isa, Rockhampton, Thursday Island, Townsville</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>La Trobe University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>VIC:</strong> Bendigo, Melbourne, Mildura, Shepparton, Wodonga</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Macquarie University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Monash University</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Frankston, Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Murdoch University</summary>
+              <div class="industry-detail__body">
+                <p><strong>WA:</strong> Mandurah, Perth</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Queensland University of Technology</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Brisbane</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>RMIT University</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Bendigo, Hamilton, Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Southern Cross University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Coffs Harbour, Lismore</p>
+                <p><strong>QLD:</strong> Gold Coast</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Swinburne University of Technology</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>VIC:</strong> Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Torrens University Australia</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Leura, Sydney</p>
+                <p><strong>QLD:</strong> Brisbane, Gold Coast</p>
+                <p><strong>SA:</strong> Adelaide</p>
+                <p><strong>VIC:</strong> Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Adelaide</summary>
+              <div class="industry-detail__body">
+                <p><strong>SA:</strong> Adelaide, Roseworthy</p>
+                <p><strong>VIC:</strong> Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Canberra</summary>
+              <div class="industry-detail__body">
+                <p><strong>ACT:</strong> Canberra</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Divinity</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Melbourne</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Melbourne</summary>
+              <div class="industry-detail__body">
+                <p><strong>VIC:</strong> Creswick, Dookie, Shepparton</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of New England</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Armidale, Sydney, Tamworth, Taree</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of New South Wales</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>ACT:</strong> Canberra</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Newcastle</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Central Coast, Newcastle, Port Macquarie</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Notre Dame Australia</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>WA:</strong> Broome, Fremantle</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Queensland</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Brisbane, Gatton</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of South Australia</summary>
+              <div class="industry-detail__body">
+                <p><strong>SA:</strong> Adelaide</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Southern Queensland</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Springfield, Stanthorpe, Toowoomba</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Sydney</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Tasmania</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>TAS:</strong> Burnie, Hobart, Launceston</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Technology Sydney</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of the Sunshine Coast</summary>
+              <div class="industry-detail__body">
+                <p><strong>QLD:</strong> Fraser Coast, Moreton Bay, Sunshine Coast</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Western Australia</summary>
+              <div class="industry-detail__body">
+                <p><strong>WA:</strong> Perth, Albany</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>University of Wollongong</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Liverpool, Sydney, Wollongong</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Victoria University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Sydney</p>
+                <p><strong>QLD:</strong> Brisbane</p>
+                <p><strong>VIC:</strong> Melbourne, Werribee</p>
+              </div>
+            </details>
+
+            <details class="industry-detail customer-card" open>
+              <summary>Western Sydney University</summary>
+              <div class="industry-detail__body">
+                <p><strong>NSW:</strong> Hawkesbury, Penrith, Sydney</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= How we work ================= -->
+    <section class="section" id="how">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">How we work</p>
+          <h2>Collaborative by default. Flexible by design.</h2>
+          <p class="section-head__lead">
+            "Working together" isn't a slogan for us — we listen before we propose,
+            and we structure engagements around your budget and goals.
+          </p>
+        </header>
+
+        <div class="section-media section-media--wide reveal">
+          <img src="assets/images/generated/delivery-workshop.png"
+               alt="Consulting team mapping a technology transformation roadmap in a modern project room"
+               width="1693" height="929" loading="lazy">
+        </div>
+
+        <!-- Approach steps -->
+        <ol class="steps reveal">
+          <li class="step">
+            <span class="step__num">01</span>
+            <h3>Listen</h3>
+            <p>Understand your situation and priorities before suggesting anything.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">02</span>
+            <h3>Design</h3>
+            <p>Blueprint a solution mapped to realistic, agreed goals.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">03</span>
+            <h3>Build &amp; implement</h3>
+            <p>Deliver with best practices and ISO 9001 quality control.</p>
+          </li>
+          <li class="step">
+            <span class="step__num">04</span>
+            <h3>Optimise &amp; manage</h3>
+            <p>Support the full lifecycle of your applications.</p>
+          </li>
+        </ol>
+
+        <div class="how-split">
+          <!-- Engagement models -->
+          <div class="panel reveal">
+            <h3>Engagement models</h3>
+            <p class="panel__sub">Flexible ways to work together.</p>
+            <ul class="tag-list">
+              <li>Onsite–Offshore</li>
+              <li>Fixed Price</li>
+              <li>Time &amp; Material</li>
+              <li>Offshore Dedicated Development Centre</li>
+              <li>Global Resourcing</li>
+              <li>SaaS Infrastructure</li>
+              <li>Virtual Development Centre</li>
+              <li>Build-Operate-Transfer</li>
+            </ul>
+          </div>
+
+          <!-- Pricing philosophy -->
+          <div class="panel panel--accent reveal">
+            <h3>Pricing you can predict</h3>
+            <ul class="check-list">
+              <li>Flat fees for core consulting &amp; advisory — not just hourly billing.</li>
+              <li>Rates kept below the market average.</li>
+              <li>Discounts for startups, non-profits, cooperatives and small social enterprises.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Engagement Models ================= -->
+    <section class="section" id="models">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">How we engage</p>
+          <h2>Eight flexible engagement models — choose what works for you.</h2>
+        </header>
+
+        <div class="models-grid">
+          <div class="model-card reveal">
+            <h3>Onsite–Offshore</h3>
+            <p>Blend of local and remote teams for real-time collaboration with cost advantage.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Fixed Price</h3>
+            <p>Predictable costs with clear scope and shared risk. Perfect for well-defined projects.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Time &amp; Material</h3>
+            <p>Flexibility for evolving requirements with transparent tracking and billing.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Dedicated Centre</h3>
+            <p>Exclusive offshore development team with full control and rapid scaling capability.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Global Resourcing</h3>
+            <p>Tap our global talent pool for project-based work with cost effectiveness.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>SaaS Infrastructure</h3>
+            <p>Cloud-native solutions with no capital outlay and managed services included.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Virtual Dev Centre</h3>
+            <p>Extended team for ongoing work with cost advantage and dedicated support.</p>
+          </div>
+          <div class="model-card reveal">
+            <h3>Build-Operate-Transfer</h3>
+            <p>We build the solution, you operate it. Full knowledge transfer included.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= Pricing ================= -->
+    <section class="section section--alt" id="pricing">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Pricing you can predict</p>
+          <h2>Transparent, fair, and below market average.</h2>
+        </header>
+
+        <div class="pricing-panel reveal">
+          <div class="pricing-feature">
+            <h3>✓ Flat fees for consulting</h3>
+            <p>Not just hourly billing. For core advisory and implementation work, we charge transparent flat fees so you know exactly what you'll pay.</p>
+          </div>
+          <div class="pricing-feature">
+            <h3>✓ Below market rates</h3>
+            <p>We keep our overhead low and pass the savings to you. Our rates stay consistently below the average consulting fee in the market.</p>
+          </div>
+          <div class="pricing-feature">
+            <h3>✓ Special discounts for</h3>
+            <p>Startups, non-profit organisations, cooperatives, and small social enterprises all receive preferential pricing.</p>
+          </div>
+          <div class="pricing-feature">
+            <h3>✓ Flexible payments</h3>
+            <p>Bank transfer, online banking, check, bank draft, mobile money, or cash — we support the payment method that works for you.</p>
+          </div>
+        </div>
+
+        <p class="pricing-note reveal">Get a transparent quote for your project with no surprises. <a href="#contact" class="btn btn--sm btn--primary">Request a proposal</a></p>
+      </div>
+    </section>
+
+    <!-- ================= Why GETIIT ================= -->
+    <section class="section section--alt" id="why">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Why GETIIT</p>
+          <h2>We measure ourselves by your results — not by hours billed.</h2>
+        </header>
+
+        <div class="why-grid">
+          <article class="why-item reveal">
+            <h3>Education domain depth</h3>
+            <p>Teams devoted to the real challenges of the education sector.</p>
+          </article>
+          <article class="why-item reveal">
+            <h3>Vendor-neutral</h3>
+            <p>Independent of software editors and hardware makers — so advice serves you, not a licence.</p>
+          </article>
+          <article class="why-item reveal">
+            <h3>Flexible global delivery</h3>
+            <p>Eight engagement models, onshore and offshore, sized to your project.</p>
+          </article>
+          <article class="why-item reveal">
+            <h3>Predictable, fair pricing</h3>
+            <p>Flat fees, below-market rates and discounts for smaller organisations.</p>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ================= Purpose (editorial pull-quote) ================= -->
+    <section class="section purpose">
+      <div class="container purpose__inner reveal">
+        <span class="purpose__rule" aria-hidden="true"></span>
+        <p class="eyebrow">Our purpose</p>
+        <blockquote class="pullquote">
+          We enable clients to <em>transform and perform</em> through technology —
+          giving them the freedom to achieve superior results.
+        </blockquote>
+        <p class="purpose__labels">Enabling Freedom &middot; Enabling Transformation</p>
+      </div>
+    </section>
+
+    <!-- ================= Contact ================= -->
+    <section class="section section--spacious" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-intro reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Start a conversation.</h2>
+          <p>Tell us about your institution or organisation and what you're trying to
+            change. We'll suggest a realistic path — no obligation.</p>
+
+          <!-- <div class="contact-photo">
+            <img src="assets/images/generated/contact-consultation.png"
+                 alt="Consultants speaking with a client in a modern office"
+                 width="1536" height="1024" loading="lazy">
+          </div> -->
+
+          <ul class="contact-details">
+            <li>
+              <span class="contact-details__label">Email</span>
+              <a href="mailto:info@getiit.in">info@getiit.in</a>
+            </li>
+            <li>
+              <span class="contact-details__label">Phone</span>
+              <a href="tel:+919483113333">+91 94831 13333</a>
+            </li>
+            <li>
+              <span class="contact-details__label">Office</span>
+              <span>Judicial Layout, Bengaluru 560076, India</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required />
+          </div>
+          <div class="field">
+            <label for="org">Organisation</label>
+            <input type="text" id="org" name="org" autocomplete="organization" />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="sector">Sector</label>
+            <select id="sector" name="sector">
+              <option value="">Select…</option>
+              <option>Higher Education</option>
+              <option>Professional, Vocational or Technical Education</option>
+              <option>Government or Non-profit</option>
+              <option>Other enterprise</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="message">What are you trying to change?</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div class="field--full form-footer">
+            <button type="submit" class="btn btn--primary">Send message</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= Footer ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="assets/logo-lockup.png" alt="GETIIT" class="footer-logo" width="150" height="128" />
+        <p class="footer-fullname">Global Electronic Transformation &amp; Innovative Information Technology</p>
+        <p class="footer-tagline">Enabling Freedom &middot; Enabling Transformation</p>
+      </div>
+
+      <nav class="footer-links" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="#what">What we do</a>
+        <a href="#who">Who we serve</a>
+        <a href="#how">How we work</a>
+        <a href="#why">Why GETIIT</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer-contact">
+        <h4>Get in touch</h4>
+        <a href="mailto:info@getiit.in">info@getiit.in</a>
+        <a href="tel:+919483113333">+91 94831 13333</a>
+        <span>Judicial Layout, Bengaluru 560076, India</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year"></span> GETIIT. All rights reserved.</p>
+      <p>www.getiit.in</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

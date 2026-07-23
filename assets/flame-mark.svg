@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 208" role="img" aria-label="GETIIT flame mark">
+  <title>GETIIT flame mark</title>
+  <defs>
+    <linearGradient id="getiitCyan" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7FE0FF"/>
+      <stop offset="0.5" stop-color="#35C4F0"/>
+      <stop offset="1" stop-color="#17A6E8"/>
+    </linearGradient>
+    <linearGradient id="getiitBlue" x1="0.2" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#1E9BE0"/>
+      <stop offset="0.5" stop-color="#1478DE"/>
+      <stop offset="1" stop-color="#0B6FD1"/>
+    </linearGradient>
+    <radialGradient id="getiitCore" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#10248F" stop-opacity="0.9"/>
+      <stop offset="0.6" stop-color="#122A9E" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#122A9E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer flame silhouette (light cyan lobe) -->
+  <path fill="url(#getiitCyan)"
+        d="M64 6 C55 44 32 64 30 112 C28 156 44 190 64 204 C84 190 100 156 98 112 C96 64 73 44 64 6 Z"/>
+
+  <!-- Dark swirl body, leaving a cyan crescent on the left -->
+  <path fill="url(#getiitBlue)"
+        d="M64 10 C70 44 90 66 92 112 C93 150 80 184 66 200 C70 176 72 156 66 130 C60 104 50 74 64 10 Z"/>
+
+  <!-- Deep-blue radial core glow -->
+  <ellipse cx="66" cy="112" rx="26" ry="42" fill="url(#getiitCore)"/>
+
+  <!-- Bright inner tongue rising from the base -->
+  <path fill="#5FD6F6" fill-opacity="0.9"
+        d="M64 122 C68 140 74 152 70 170 C67 182 64 192 62 198 C61 188 58 178 58 164 C58 148 60 134 64 122 Z"/>
+
+  <!-- White gloss highlight on the upper-right edge -->
+  <path fill="#FFFFFF" fill-opacity="0.55"
+        d="M72 22 C82 40 92 60 92 92 C88 64 80 44 70 28 Z"/>
+</svg>

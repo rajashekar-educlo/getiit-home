@@ -604,6 +604,10 @@ p { color: var(--ink-700); }
   .section { padding-block: var(--section-y-sm); }
   .section--spacious { padding-block: var(--section-y); }
   .section-head { margin-bottom: var(--s-5); }
+  .header-inner { gap: var(--s-3); }
+  .brand { min-width: 0; }
+  .brand__name { white-space: nowrap; }
+  .header-actions { margin-left: auto; gap: var(--s-2); flex-shrink: 0; }
   .nav, .header-actions .btn { display: none; }
   .nav-toggle { display: block; }
   .nav.is-open {
